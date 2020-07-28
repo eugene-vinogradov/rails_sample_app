@@ -7,7 +7,11 @@
     <%= link_to "Ruby on Rails Tutorial", "https://www.railstutorial.org/"%>
     sample application.
   </h2>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <% if logged_in? %>
+    <div></div>
+  <% else %>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
 </div>
 <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200px"),
             "https://rubyonrails.org/" %>
