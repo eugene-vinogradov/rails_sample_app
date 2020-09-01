@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find_by_id(params[:id])
   end
 
   def create
@@ -16,9 +16,13 @@ class UsersController < ApplicationController
       flash[:success] = 'Welcome to the Sample App!'
       redirect_to @user
     else
-      flash[:danger] = 'LOL'
+      flash[:danger] = 'You make mistake! :)'
       render 'new'
     end
+  end
+
+  def edit
+
   end
 
   private
