@@ -33,7 +33,7 @@ gem 'faker', '~> 1.6', '>= 1.6.6'
 gem 'will_paginate', '~> 3.3'
 
 gem 'active_storage_validations', '~> 0.9.0'
-gem 'image_processing', '~> 1.11'
+gem 'image_processing', '~> 1.12'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 # Use sqlite3 as the database for Active Record
 
